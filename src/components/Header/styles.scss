@@ -1,0 +1,9 @@
+@use '../../styles/variables.scss' as *;
+
+.container-header {
+    background: linear-gradient(to bottom, $color-darkblue 90%, $color-blue);
+
+    color: $color-light;
+    width: 100%;
+    padding: 22px;
+}
