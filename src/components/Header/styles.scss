@@ -1,9 +1,67 @@
 @use '../../styles/variables.scss' as *;
+@use '../../styles/animations.scss' as *;
 
 .container-header {
-    background: linear-gradient(to bottom, $color-darkblue 90%, $color-blue);
+    background: linear-gradient(to bottom, $color-darkblue 80%, $color-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    color: $color-light;
     width: 100%;
-    padding: 22px;
+    padding: 24px 32px;
+
+    h1 {
+        font-size: 3.2rem;
+        color: $color-secondary;
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        ul {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            justify-content: end;
+            list-style: none;
+            font-size: 2rem;
+
+            a {
+                text-decoration: none;
+                color: $color-light;
+            }
+
+            a:hover {
+                animation-name: grow-up;
+                animation-duration: 1s;
+                font-weight: bold;
+                transform: scale(1.05);
+            }
+        }
+
+        .languages {
+            img {
+                width: 28px;
+                margin-right: 8px;
+                cursor: pointer;
+                opacity: 0.5;
+            }
+
+
+            img:hover {
+                animation-name: grow-up;
+                animation-duration: 1s;
+                transform: scale(1.1);
+                opacity: 1;
+            }
+
+            img.active {
+                opacity: 1;
+            }
+        }
+
+
+    }
 }
