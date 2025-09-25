@@ -13,13 +13,13 @@ function Header() {
       <div className='header-right'>
         <ul>
           <li>
-            <a href='#about-section'>Sobre</a>
+            <a href='#about-section'>{language == "pt" ? "Sobre" : "About"}</a>
           </li>
           <li>
-            <a href='#experience-section'>Experiências</a>
+            <a href='#experience-section'>{language == "pt" ? "Experiências" : "Experiences"}</a>
           </li>
           <li>
-            <a href='#projects-section'>Projetos</a>
+            <a href='#projects-section'>{language == "pt" ? "Projetos" : "Projects"}</a>
           </li>
         </ul>
         <div className='languages'>
