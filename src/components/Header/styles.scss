@@ -2,18 +2,20 @@
 @use '../../styles/animations.scss' as *;
 
 .container-header {
-    background: linear-gradient(to bottom, $color-darkblue 80%, $color-blue);
+    //background: linear-gradient(to bottom, $color-darkblue 80%, $color-blue);
+
+    background-color: $color-darkblue;
+    background-image: radial-gradient(circle at top right,
+            $color-blue,
+            transparent 35%);
+
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
+    font-family: 'Cormorant Garamond', sans-serif;
 
     width: 100%;
     padding: 24px 32px;
-
-    h1 {
-        font-size: 3.2rem;
-        color: $color-secondary;
-    }
 
     .header-right {
         display: flex;

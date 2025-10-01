@@ -8,13 +8,8 @@ function Header() {
 
   return (
     <div className="container-header">
-      <h1>Rafael Aguiar</h1>
-
       <div className='header-right'>
         <ul>
-          <li>
-            <a href='#about-section'>{language == "pt" ? "Sobre" : "About"}</a>
-          </li>
           <li>
             <a href='#experience-section'>{language == "pt" ? "Experiências" : "Experiences"}</a>
           </li>
