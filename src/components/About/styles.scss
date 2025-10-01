@@ -2,16 +2,16 @@
 @use '../../styles/animations.scss' as *;
 
 .container-about {
-    padding: 28px 32px;
+    padding: 32px;
     background-color: $color-darkblue;
     background-image: radial-gradient(circle at top right,
             $color-blue,
-            transparent 40%
-        );
+            transparent 35%);
 
     color: $color-light;
     display: flex;
     align-items: center;
+    height: calc(100vh - 100px);
 
     .about-image {
         img {
@@ -48,12 +48,15 @@
                 width: 35px;
                 cursor: pointer;
                 margin-right: 8px;
+                opacity: 0.8;
             }
 
             img:hover {
                 animation-name: grow-up;
                 animation-duration: 1s;
                 transform: scale(1.1);
+                opacity: 1;
+
             }
         }
     }
