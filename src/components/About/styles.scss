@@ -2,7 +2,59 @@
 @use '../../styles/animations.scss' as *;
 
 .container-about {
-    padding: 24px 32px;
-    background-color: $color-blue;
+    padding: 28px 32px;
+    background-color: $color-darkblue;
+    background-image: radial-gradient(circle at top right,
+            $color-blue,
+            transparent 40%
+        );
+
     color: $color-light;
+    display: flex;
+    align-items: center;
+
+    .about-image {
+        img {
+            width: 300px;
+            border-radius: 50%;
+            border: 2px solid $color-secondary;
+            margin-right: 24px;
+        }
+
+    }
+
+    .about-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .content-text {
+            width: 90%;
+
+            h1 {
+                font-size: 3.2rem;
+                margin-bottom: 20px;
+            }
+
+            p {
+                margin-bottom: 20px;
+                font-size: 1.6rem;
+                line-height: 28px;
+            }
+        }
+
+        .content-image {
+            img {
+                width: 35px;
+                cursor: pointer;
+                margin-right: 8px;
+            }
+
+            img:hover {
+                animation-name: grow-up;
+                animation-duration: 1s;
+                transform: scale(1.1);
+            }
+        }
+    }
 }
