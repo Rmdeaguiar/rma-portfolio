@@ -2,8 +2,6 @@
 @use '../../styles/animations.scss' as *;
 
 .container-header {
-    //background: linear-gradient(to bottom, $color-darkblue 80%, $color-blue);
-
     background-color: $color-darkblue;
     background-image: radial-gradient(circle at top right,
             $color-blue,
@@ -15,7 +13,9 @@
     font-family: 'Cormorant Garamond', sans-serif;
 
     width: 100%;
+    height: 100px;
     padding: 24px 32px;
+    
 
     .header-right {
         display: flex;
