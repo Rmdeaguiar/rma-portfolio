@@ -8,7 +8,7 @@ import DotNet from '../../assets/net.svg'
 
 function Experience() {
   return (
-    <div className="container-experience">
+    <div id="experience-section" className="container-experience">
       <h2>Experiências Profissionais</h2>
       <div className='experiences'>
         <div className='experience-content'>
@@ -20,8 +20,8 @@ function Experience() {
           <p>Foco no Front-End. Contribuí para o desenvolvimento de uma plataforma voltada a escritórios de advocacia, focada em produtividade, organização e automação de processos, oferecendo funcionalidades como geração e assinatura de documentos, gestão de clientes e processos e organização de agenda.</p>
           <img src={ReactJs} alt="react-js" />
           <img src={JavaScript} alt="javascript" />
-          <img src={Git} alt="git" />
           <img src={Node} alt="nodejs" />
+          <img src={Git} alt="git" />
         </div>
 
         <div className='experience-content'>
@@ -34,6 +34,7 @@ function Experience() {
           <img src={DotNet} alt=".NET" />
           <img src={JavaScript} alt="javascript" />
           <img src={Csharp} alt="csharp" />
+          <img src={Git} alt="git" />
         </div>
       </div>
 
