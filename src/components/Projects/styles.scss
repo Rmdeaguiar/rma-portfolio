@@ -1,0 +1,75 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/animations.scss' as *;
+
+.container-projects {
+    padding: 36px;
+    width: 100%;
+
+    background-color: $color-darkblue;
+    background-image: radial-gradient(circle at bottom right,
+            $color-blue,
+            transparent 25%);
+
+    color: $color-secondary;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .projects {
+        display: flex;
+        align-items: start;
+
+        .project {
+            background-color: $color-light;
+            color: $color-darkblue;
+            font-weight: 600;
+            width: 400px;
+            border: 1.5px solid $color-secondary;
+            border-radius: 10px;
+            padding: 12px;
+            margin-right: 30px;
+            height: 200px;
+            cursor: pointer;
+
+            .project-content {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+
+                h3 {
+                    font-size: 1.8rem;
+                    margin-bottom: 4px;
+                    padding-bottom: 4px;
+                    border-bottom: 2px solid $color-blue;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    line-height: 18px;
+                }
+
+                .project-tec {
+                    display: flex;
+                    margin-top: auto;
+
+                    img {
+                        width: 24px;
+                        margin-right: 4px;
+                    }
+                }
+            }
+
+            &:hover {
+                animation-name: grow-up;
+                animation-duration: 1s;
+                transform: scale(1.05);
+                opacity: 1;
+            }
+        }
+    }
+
+}
