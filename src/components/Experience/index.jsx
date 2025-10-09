@@ -5,6 +5,10 @@ import Git from '../../assets/git.svg';
 import Node from '../../assets/node.svg'
 import Csharp from '../../assets/csharp.svg'
 import DotNet from '../../assets/net.svg'
+
+import Analysis from '../../assets/analysis.png';
+import Cubos from '../../assets/cubos.png'
+
 import { useLanguage } from '../../context/LanguageContext';
 
 
@@ -17,7 +21,7 @@ function Experience() {
       <div className='experiences'>
         <div className='experience-content'>
           <div className='experience-header'>
-            <h3>Cubos Academy </h3>
+            <h3><img src={Cubos} alt="cubos" />Cubos Academy </h3>
             <span>Jan 2023 / {language == "pt" ? "Abr" : "Apr"} 2023</span>
           </div>
           <h5>{language == "pt" ? "Desenvolvedor Full Stack" : "Full Stack Developer"}</h5>
@@ -32,13 +36,13 @@ function Experience() {
 
         <div className='experience-content'>
           <div className='experience-header'>
-            <h3>Analysis BI </h3>
+            <h3><img src={Analysis} alt="analysis" />Analysis BI </h3>
             <span>{language == "pt" ? "Abr 2023 / Atual" : "Apr 2023 / Present"} </span>
           </div>
           <h5>{language == "pt" ? "Desenvolvedor Full Stack" : "Full Stack Developer"}</h5>
           <p> {language == "pt" ? "Contribuo para a melhoria de dashboards utilizando JavaScript, C#, .NET, SQL Server e DevExpress, incluindo novos recursos personalizados para aprimorar a experiência do usuário. Desenvolvi um aplicativo multiplataforma iOS/Android permitindo aos clientes o acesso às soluções BI de qualquer lugar." :
             "I contribute to enhancing dashboards using JavaScript, C#, .NET, SQL Server, and DevExpress, including new custom features to improve user experience. I also developed a cross-platform iOS/Android application that allows clients to access BI solutions from anywhere."}
-            </p>
+          </p>
           <img src={DotNet} alt=".NET" />
           <img src={JavaScript} alt="javascript" />
           <img src={Csharp} alt="csharp" />

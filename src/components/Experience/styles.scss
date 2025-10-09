@@ -40,6 +40,12 @@
                     color: $color-lightblue;
                     font-size: 1.6rem;
                     margin-right: 10px;
+                    display: flex;
+
+                    img {
+                        width: 20px;
+                        border-radius: 4px;
+                    }
                 }
 
                 span {
