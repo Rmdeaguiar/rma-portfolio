@@ -2,14 +2,17 @@ import Header from "../../components/Header"
 import About from "../../components/About";
 import Experience from "../../components/Experience";
 import Projects from "../../components/Projects";
+import { LanguageProvider } from "../../context/LanguageContext";
 
 function Home() {
   return (
     <>
-      <Header />
-      <About />
-      <Experience/>
-      <Projects/>
+      <LanguageProvider>
+        <Header />
+        <About />
+        <Experience />
+        <Projects />
+      </LanguageProvider>
     </>
   )
 }

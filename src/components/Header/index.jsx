@@ -1,10 +1,11 @@
 import './styles.scss';
 import Brazil from '../../assets/brazil.svg';
 import USA from '../../assets/usa.svg'
+import { useLanguage } from '../../context/LanguageContext';
 
 function Header() {
 
-  let language = "pt";
+  const { language, setLanguage } = useLanguage()
 
   return (
     <div className="container-header">
@@ -18,9 +19,8 @@ function Header() {
           </li>
         </ul>
         <div className='languages'>
-          <img src={Brazil} alt='portuguese' className={language == "pt" ? "active" : ""} />
-          <img src={USA} alt='english' className={language === "en" ? "active" : ""}
-          />
+          <img src={Brazil} alt='portuguese' className={language == "pt" ? "active" : ""} onClick={() => setLanguage("pt")} />
+          <img src={USA} alt='english' className={language === "en" ? "active" : ""} onClick={() => setLanguage("en")} />
         </div>
       </div>
     </div>

@@ -11,25 +11,34 @@ import Css from '../../assets/css.svg'
 import Postgres from '../../assets/postgresql.svg'
 import Scss from '../../assets/scss.svg'
 
+import { useLanguage } from '../../context/LanguageContext';
+
 function Projects() {
+    const { language } = useLanguage();
+
     const projects = [
         {
             title: "Dra. Lais Muhana",
-            description: "Desenvolvimento de um site responsivo, com integração de domínio próprio, destacando informações sobre a profissional com uma navegação clara e design otimizado para diferentes dispositivos.",
+            description: `${language == "pt" ? "Desenvolvimento de um site responsivo, com integração de domínio próprio, destacando informações sobre a profissional com uma navegação clara e design otimizado para diferentes dispositivos." : 
+                "Development of a responsive website with custom domain integration, highlighting information about the professional through clear navigation and an optimized design for different devices."}
+                `,
             link: "https://laismuhana.com.br/",
             image: ProjectDLM,
             techs: [ReactJs, JavaScript, Scss, Git],
         },
         {
             title: "+ADV",
-            description: "Contribuí para o desenvolvimento de uma plataforma voltada a advocacia, focada em produtividade, organização e automação de processos, oferecendo maior praticidade aos clientes.",
+            description: `${language == "pt" ? "Contribuí para o desenvolvimento de uma plataforma voltada a advocacia, focada em produtividade, organização e automação de processos, oferecendo maior praticidade aos clientes." 
+                : "Contributed to the development of a platform for the legal sector, focused on productivity, organization, and process automation, providing greater convenience for clients."}`,
             link: "https://maisadv.com/",
             image: ProjectAdv,
             techs: [ReactJs, JavaScript, Node, Git],
         },
         {
-            title: "Cubos Academy Project",
-            description: "Projeto de conclusão do curso Desenvolvimento de Software (Cubos Academy). Desenvolvido junto à uma equipe, trata-se uma aplicação para cadastrar e editar clientes com suas respectivas cobranças. Além disso, funcionalidades como resumo de cobranças, pesquisa, ordenação e detalhamento de clientes.",
+            title: "Payment Management",
+            description: `${ language == "pt" ? "Projeto de conclusão do curso Desenvolvimento de Software (Cubos Academy). Desenvolvido junto à uma equipe, trata-se uma aplicação para cadastrar e editar clientes com suas respectivas cobranças. Além disso, funcionalidades como resumo de cobranças, pesquisa, ordenação e detalhamento de clientes." :
+                "Final project of the Software Development course (Cubos Academy). Developed as part of a team, it is an application for registering and editing clients and their respective charges. It also includes features such as charge summaries, search, sorting, and detailed client views."
+            }`,
             link: "https://payment-management.netlify.app/",
             image: ProjectCubos,
             techs: [ReactJs, Css, JavaScript, Node, Postgres, Git],
@@ -39,7 +48,7 @@ function Projects() {
 
     return (
         <div id="projects-section" className="container-projects">
-            <h2>Projetos</h2>
+            <h2>{ language == "pt" ? "Projetos" : "Projects"}</h2>
 
             <div className="projects">
                 {projects.map((p, index) => (
