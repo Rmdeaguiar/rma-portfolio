@@ -15,7 +15,7 @@
     width: 100%;
     height: 100px;
     padding: 24px 32px;
-    
+
 
     .header-right {
         display: flex;
@@ -66,5 +66,26 @@
         }
 
 
+    }
+}
+
+@media (max-width: 800px) {
+    .container-header {
+        height: 70px;
+        padding: 8px;
+        .header-right {
+            gap: 10px;
+
+            ul {
+                gap: 12px;
+                font-size: 1.6rem;
+            }
+
+            .languages {
+                img {
+                    width: 20px;
+                }
+            }
+        }
     }
 }
