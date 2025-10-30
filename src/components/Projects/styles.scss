@@ -73,3 +73,50 @@
     }
 
 }
+
+@media (max-width: 800px) {
+    .container-projects {
+        padding: 24px;
+        width: 100%;
+        background-image: radial-gradient(circle at bottom right,
+                $color-blue,
+                transparent 50%);
+
+
+        .projects {
+            flex-direction: column;
+
+            .project {
+                font-weight: 600;
+                width: 100%;
+                padding: 10px;
+                margin-right: 30px;
+                margin-bottom: 12px;
+
+                .project-content {
+                    h3 {
+                        font-size: 1.6rem;
+                        margin-bottom: 4px;
+                        padding-bottom: 4px;
+                        border-bottom: 1.5px solid $color-blue;
+                    }
+
+                    p {
+                        font-size: 1.1rem;
+                        line-height: 18px;
+                        font-weight: 500;
+                    }
+
+                    .project-tec {
+                        img {
+                            width: 20px;
+                            margin-right: 6px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
