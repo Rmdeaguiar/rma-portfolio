@@ -69,3 +69,61 @@
         }
     }
 }
+
+@media (max-width: 800px) {
+    .container-experience {
+        padding: 24px;
+        background-image: radial-gradient(circle at top left,
+                $color-blue,
+                transparent 50%);
+
+        color: $color-light;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            margin-bottom: 24px;
+        }
+
+        .experiences {
+            flex-direction: column;
+
+            .experience-content {
+                padding: 8px;
+                margin-bottom: 12px;
+                width: 300px;
+
+
+                .experience-header {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-bottom: 8px;
+
+                    h3 {
+                        font-size: 1.4rem;
+                        margin-right: 8px;
+
+                        img {
+                            width: 16px;
+                        }
+                    }
+
+                    span {
+                        font-size: 1rem;
+                    }
+                }
+
+                p {
+                    font-size: 1.2rem;
+                }
+
+                img {
+                    margin-right: 6px;
+                    width: 18px;
+                }
+            }
+        }
+    }
+}
