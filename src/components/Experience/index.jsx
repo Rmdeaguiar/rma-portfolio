@@ -24,7 +24,7 @@ function Experience() {
             <h3><img src={Cubos} alt="cubos" />Cubos Academy </h3>
             <span>Jan 2023 / {language == "pt" ? "Abr" : "Apr"} 2023</span>
           </div>
-          <h5>{language == "pt" ? "Desenvolvedor Full Stack" : "Full Stack Developer"}</h5>
+          <h5>{language == "pt" ? "Desenvolvedor Front-End" : "Front-End Developer"}</h5>
           <p>{language == "pt" ? "Foco no Front-End. Contribuí para o desenvolvimento de uma plataforma voltada a escritórios de advocacia, focada em produtividade, organização e automação de processos, oferecendo funcionalidades como geração e assinatura de documentos, gestão de clientes e processos e organização de agenda." :
             "Focused on Front-End development. I contributed to the creation of a platform designed for law firms, aimed at improving productivity, organization, and process automation, offering features such as document generation and signing, client and case management, and schedule organization."}
           </p>
