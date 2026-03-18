@@ -19,8 +19,9 @@ function Projects() {
     const projects = [
         {
             title: "Dra. Lais Muhana",
-            description: `${language == "pt" ? "Desenvolvimento de um site responsivo, com integração de domínio próprio, destacando informações sobre a profissional com uma navegação clara e design otimizado para diferentes dispositivos." :
-                "Development of a responsive website with custom domain integration, highlighting information about the professional through clear navigation and an optimized design for different devices."}
+            description: `${language == "pt" ? "Desenvolvimento de um site responsivo, com integração de domínio próprio, destacando informações sobre a profissional com uma navegação clara e design otimizado para diferentes dispositivos." : language == "en" ?
+                "Development of a responsive website with custom domain integration, highlighting information about the professional through clear navigation and an optimized design for different devices." :
+                "Desarrollo de un sitio web responsivo, con integración de dominio personalizado, que destaca la información sobre el profesional con una navegación clara y un diseño optimizado para diferentes dispositivos."}
                 `,
             link: "https://laismuhana.com.br/",
             image: ProjectDLM,
@@ -28,16 +29,18 @@ function Projects() {
         },
         {
             title: "+ADV",
-            description: `${language == "pt" ? "Contribuí para o desenvolvimento de uma plataforma voltada a advocacia, focada em produtividade, organização e automação de processos, oferecendo maior praticidade aos clientes."
-                : "Contributed to the development of a platform for the legal sector, focused on productivity, organization, and process automation, providing greater convenience for clients."}`,
-            link: "https://maisadv.com/",
+            description: `${language == "pt" ? "Contribuí para o desenvolvimento de uma plataforma voltada a advocacia, focada em produtividade, organização e automação de processos, oferecendo maior praticidade aos clientes." : language == "en" ?
+                "Contributed to the development of a platform for the legal sector, focused on productivity, organization, and process automation, providing greater convenience for clients." :
+                "Contribuí al desarrollo de una plataforma orientada a la profesión jurídica, centrada en la productividad, la organización y la automatización de procesos, ofreciendo una mayor comodidad a los clientes."}`,
+            link: "https://app.maisadv.com/",
             image: ProjectAdv,
             techs: [ReactJs, JavaScript, Scss, Node, Git],
         },
         {
             title: "Payment Management",
-            description: `${language == "pt" ? "Projeto de conclusão do curso Desenvolvimento de Software (Cubos Academy). Desenvolvido junto à uma equipe, trata-se uma aplicação para cadastrar e editar clientes com suas respectivas cobranças. Além disso, funcionalidades como resumo de cobranças, pesquisa, ordenação e detalhamento de clientes." :
-                "Final project of the Software Development course (Cubos Academy). Developed as part of a team, it is an application for registering and editing clients and their respective charges. It also includes features such as charge summaries, search, sorting, and detailed client views."
+            description: `${language == "pt" ? "Projeto de conclusão do curso Desenvolvimento de Software (Cubos Academy). Desenvolvido junto à uma equipe, trata-se uma aplicação para cadastrar e editar clientes com suas respectivas cobranças. Além disso, funcionalidades como resumo de cobranças, pesquisa, ordenação e detalhamento de clientes." : language == "en" ?
+                "Final project of the Software Development course (Cubos Academy). Developed as part of a team, it is an application for registering and editing clients and their respective charges. It also includes features such as charge summaries, search, sorting, and detailed client views." :
+                "Proyecto final del curso de Desarrollo de Software (Cubos Academy). Desarrollada en equipo, es una aplicación para registrar y editar clientes con sus respectivas facturas. Además, incluye funcionalidades como resúmenes de facturas, búsqueda, ordenación y detalles del cliente."
                 }`,
             link: "https://payment-management.netlify.app/",
             image: ProjectCubos,
