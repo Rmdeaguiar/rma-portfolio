@@ -51,7 +51,7 @@ function Projects() {
 
     return (
         <div id="projects-section" className="container-projects">
-            <h2>{language == "pt" ? "Projetos" : "Projects"}</h2>
+            <h2>{language == "pt" ? "Projetos" : language == "en" ? "Projects" : "Proyectos"}</h2>
 
             <div className="projects">
                 {projects.map((p, index) => (
